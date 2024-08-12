@@ -1,0 +1,1 @@
+document.querySelector(".swiper-container")&&new Swiper(".image-slider",{navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"},pagination:{el:".swiper-pagination",clickable:!0,loop:!0},simulateTouch:!1,slidesPerView:1,autoHeight:window.innerWidth<=1050,autoplay:{delay:5e3,stopOnLastSlide:!1,disableOnInteraction:!1},speed:2e3});
