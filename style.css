@@ -397,7 +397,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 @media (max-width: 812px) {
-  .image-slider {
+ .image-slider {
     margin-top: 65px;
     position: relative;
     max-width: 100%;
@@ -423,32 +423,18 @@ h1, h2, h3, h4, h5, h6 {
     align-items: center;
     justify-content: center;
   }
-  .swiper-button-next,
-  .swiper-button-prev {
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 10px;
-  }
-  .swiper-button-next {
-    right: 20px;
-  }
-  .swiper-button-prev {
-    left: 20px;
-  }
   .swiper-button-prev::after,
   .swiper-button-next::after {
-    color: #fff;
-    font-size: 20px !important;
+    display: none;
   }
   .image-slider .swiper-pagination {
     position: absolute;
     bottom: 5px;
-    left: 50%;
   }
   .image-slider .swiper-pagination-bullet {
-    width: 10px;
-    height: 10px;
-    line-height: 15px;
+    max-width: 10px;
+    max-height: 10px;
+    line-height: 10px;
     font-size: 10px;
     background-color: #fff;
   }
