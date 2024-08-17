@@ -23,7 +23,7 @@ if (menuLinks.length > 0) {
         const goto = menuLink.dataset.goto;  // Доступ к значению атрибута data-goto
         if (goto) {
             // Если текущее местоположение не является корневым
-            if (window.location.pathname !== '/' && !window.location.pathname.endsWith('/index.html')) {
+            if (window.location.pathname !== '/' && !window.location.pathname.endsWith('/thegilas/index.html')) {
                 // Перенаправление на главную страницу с якорем
                 window.location.href = `${window.location.origin}/thegilas/index.html${goto}`;
             } else {
