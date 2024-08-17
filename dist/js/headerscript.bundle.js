@@ -25,7 +25,7 @@ if (menuLinks.length > 0) {
             // Если текущее местоположение не является корневым
             if (window.location.pathname !== '/' && !window.location.pathname.endsWith('/index.html')) {
                 // Перенаправление на главную страницу с якорем
-                window.location.href = `${window.location.origin}/dist/html/index.html${goto}`;
+                window.location.href = `${window.location.origin}/index.html${goto}`;
             } else {
                 // Если пользователь на главной странице, выполнить прокрутку
                 if (document.querySelector(goto)) {
