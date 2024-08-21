@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Дискография</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
 </head>
 <body>
     <div class="wrapper">
@@ -29,50 +30,50 @@
             </div>  
     </div>
 </header>
- 
-        <section class="section">
-            <div class="cataloug-container">
-                <div class="cataloug-body">
-                    <div class="sing-container 1">
-                        <div class="sing-img">
-                            <img src="./dist/img/sing1.png" alt="">
-                        </div>
-                        
-                        <div class="sing-description">
-                            <div class="sing-text">
-                                <h1>Цунами</h1><p>сингл, 2024</p>
-                                
-                            </div>
-                            <a href="" class="listen-btn">слушать</a>
-                            
-                        </div>
-                    </div>
-                    <div class="sing-container 2">
-                        <div class="sing-img">
-                            <img src="./dist/img/sing2.png" alt="">
-                        </div>
-                        <div class="sing-description">
-                            <div class="sing-text">
-                                <h1>Забудь своё имя</h1><p>сингл, 2024</p>
-                                
-                            </div>
-                            <a href="" class="listen-btn">слушать</a>
-                        </div>
-                    </div>
-                
-                </div>
 
-                <div class="video">
-                    <iframe src="https://vk.com/video_ext.php?oid=-217669923&id=456239083&hd=1&autoplay=1" width="600" height="320" allow="encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+        <section class="swiper-section">
+            
+            <div class="swiper-body">
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="songs-slider swiper-container">
+                    <div class="songs-slider__wrapper swiper-wrapper">
+    
+                        <div class="song-slider__slide swiper-slide">
+                            <div class="song-slider__song">
+                                <div class="img-container">
+                                    <img src="./dist/img/sing1.png" alt="">
+                                </div>
+                                <div class="song-slide__text">
+                                    <h1>Цунами</h1>
+                                    <h2>сингл, 2024</h2>
+                                    <a class="listen-btn" href="https://band.link/tsunamibygilas" target="_blank">слушать</a>
+                                </div>   
+                            </div>
+                        </div>
+    
+                        <div class="song-slider__slide swiper-slide">
+                            <div class="song-slider__song">
+                                <img src="./dist/img/sing2.png" alt="">
+                                <div class="song-slide__text">
+                                    <h1>Забудь своё имя</h1>
+                                    <h2>сингл, 2024</h2> 
+                                    <a class="listen-btn" href="https://band.link/zabudsvoeimya" target="_blank">слушать</a>
+                                </div>                              
+                            </div>
+                        </div>
+    
+
+                    </div>
+                        <!-- <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div> -->
+                        <div class="swiper-pagination"></div>
                 </div>
-                 
             </div>
+           
         </section>
- 
-         
-        
- 
-         <footer class="footer">
+
+        <footer class="footer">
     <div class="footer-container">
         <div class="footer-top">
             <p class="join-text">МЫ В</p>
@@ -93,8 +94,9 @@
         
     </div>
 </footer>
-     </div>
- 
-     <script src="./dist/js/headerscript.bundle.js"></script>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./dist/js/songsliderscript.bundle.js"></script>
+    <script src="./dist/js/headerscript.bundle.js"></script>
+
 </body>
-</html>
