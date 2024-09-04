@@ -20,7 +20,7 @@ if (document.querySelector('.swiper-container')){
             stopOnLastSlide: false,
             disableOnInteraction: false
         },
-        speed: 2000,
+        //speed: 2000,
 
 
         
