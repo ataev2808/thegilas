@@ -20,21 +20,13 @@ if (document.querySelector('.swiper-container')){
             stopOnLastSlide: false,
             disableOnInteraction: false
         },
-        //speed: 2000,
+        speed: 2000,
 
 
         
     });
 
-    if (window.innerWidth < 812) {
-                swiper.on('touchStart', function () {
-                    swiper.params.speed = 300; // Увеличиваем скорость при ручном скролле
-                });
-
-                swiper.on('touchEnd', function () {
-                    swiper.params.speed = 1000; // Возвращаем скорость к автоскроллу
-                });
-            }
+    
 
 }
 
